@@ -16,7 +16,11 @@ auth = False
 #
 while pw != secret:
     try_count += 1
-    pw = input("What's the secret word? ")
+    #
+    # continue short cuts the loop and it stars back at the top
+    #
+    if try_count == 3: continue
+    pw = input(f"{try_count}: What's the secret word? ")
     if (try_count >= max_tries): break
 #
 # else: executes only if the loop terminated normally - not a break
