@@ -17,8 +17,7 @@ auth = False
 while pw != secret:
     try_count += 1
     pw = input("What's the secret word? ")
-    if (try_count >= max_tries):
-        break
+    if (try_count >= max_tries): break
 #
 # else: executes only if the loop terminated normally - not a break
 #
@@ -26,8 +25,6 @@ else:auth=True
 #
 # Test auth
 #
-if (auth):
-    print ("passed")
-else:
-    print ("failed")
+print ("Authorized" if auth else "Not Authorized...Calling the FBI")
+
     
