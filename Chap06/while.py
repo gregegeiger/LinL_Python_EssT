@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # Copyright 2009-2017 BHG http://bw.org/
 
-secret = 'swordfish'
-pw = ''
+animals=('dog','cat','bunny','velociraptor')
 
-while pw != secret:
-    pw = input("What's the secret word? ")
+for pet in animals:
+    print(pet)
